@@ -5,6 +5,7 @@ import net.minecraft.item.ItemArmor;
 import net.minecraft.item.ItemStack;
 
 import com.web2201.testmod.TestMod;
+import com.web2201.testmod.api.ModItems;
 
 public class ItemArcanicArmor extends ItemArmor {
 
@@ -17,10 +18,10 @@ public class ItemArcanicArmor extends ItemArmor {
 	
 	
 	public String getArmorTexture(ItemStack stack, Entity entity, int slot, String type) {
-		if(stack.getItem() == TestMod.MasterHelm || stack.getItem() == TestMod.MasterChestplate || stack.getItem() == TestMod.MasterBoot) {
+		if(stack.getItem() == ModItems.MasterHelm || stack.getItem() == ModItems.MasterChestplate || stack.getItem() == ModItems.MasterBoot) {
 			return "testmod:textures/models/armor/masterarmor_1.png";
 		}
-		if(stack.getItem() == TestMod.MasterLeg){
+		if(stack.getItem() == ModItems.MasterLeg){
 			return "testmod:textures/models/armor/masterarmor_2.png";
 		}
 		else return null;

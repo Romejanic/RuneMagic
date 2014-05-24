@@ -29,11 +29,13 @@ public class ItemMasterBlade extends ItemSword {
         return true;
     }
 	
-    public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer)
-    {
+    public ItemStack onItemRightClick(ItemStack par1ItemStack, World par2World, EntityPlayer par3EntityPlayer){ 
+    	if(par3EntityPlayer.isSneaking()){
         par3EntityPlayer.addPotionEffect(new PotionEffect(5, 300, 3));
         par3EntityPlayer.addPotionEffect(new PotionEffect(7, 1, 0));
         par3EntityPlayer.addPotionEffect(new PotionEffect(10, 150, 4));
+       
+    	}
         par3EntityPlayer.setItemInUse(par1ItemStack, this.getMaxItemUseDuration(par1ItemStack));
     	return par1ItemStack;
         

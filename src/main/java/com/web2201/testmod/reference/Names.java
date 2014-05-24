@@ -11,15 +11,15 @@ public class Names {
 		public static final String MASTER_CHESTPLATE = "ItemMasterChestplate";
 		public static final String MASTER_LEG = "ItemMasterLeg";
 		public static final String MASTER_BOOT = "ItemMasterBoot";
-		public static final String ARCANIC_CORE = "ItemArcanicCore";
-		public static final String ARCANIC_SHARD = "ItemArcanicShard";
-		public static final String ARCANIC_BINDER = "ItemArcanicBinder";
+		public static final String SOUL_CORE = "ItemArcanicCore";
+		public static final String SOUL_SHARD = "ItemArcanicShard";
+		public static final String MASTER_BINDER = "ItemMasterBinder";
 	}
 	
 	public static class Blocks{
 		
-		public static final String ARCANIC_STONE = "BlockArcanicStone";
-		public static final String ARCANIC_BRICK = "BlockArcanicBrick";
+		public static final String BLOOD_STONE = "BlockBloodStone";
+		public static final String BLOOD_BRICK = "BlockBloodBrick";
 	}
 
 }
