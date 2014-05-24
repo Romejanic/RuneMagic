@@ -32,6 +32,10 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.GameRegistry;
 
+/*
+   This mod is in the ownership of Web2201. You are allowed to use any part of the code as long as you don't release it to the public*/
+
+
 @Mod(modid = BaseInfo.MODID, name = BaseInfo.NAME, version = BaseInfo.VERSION)
 
 public class TestMod 
