@@ -1,0 +1,15 @@
+itemGroup.ArcanaCraft=ArcanaCraft
+item.ItemMasterHelm.name=Master Helmet
+item.ItemMasterChestplate.name=Master Chestplate
+item.ItemMasterLeg.name=Master Leggings
+item.ItemMasterBoot.name=Master Boots
+tile.BlockArcanicStone.name=Arcanic Stone
+tile.BlockArcanicBrick.name=Arcanic Brick
+item.Cherry.name=Cherry
+item.ItemArcanicCore.name=Arcanic Core
+item.ItemArcanicShard.name=Arcanic Shard
+item.ItemArcanicBinder.name=Arcanic Binder
+item.ItemMasterBlade.name=Master Blade
+item.MasterBow.name=Master Bow
+item.ItemMasterGem.name=Master Gem
+item.ItemInfusedMasterGem.name=Infused Master Gem
