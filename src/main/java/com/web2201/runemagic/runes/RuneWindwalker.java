@@ -46,9 +46,9 @@ public class RuneWindwalker extends Item {
 	@Override
 	@SideOnly(Side.CLIENT)
 	public void registerIcons(IIconRegister iconRegister){
-		this.itemIcon = iconRegister.registerIcon("testmod:RuneWindwalker_deactivated");
-		this.activeIcon = iconRegister.registerIcon("testmod:RuneWindwalker_activated");
-		this.passiveIcon = iconRegister.registerIcon("testmod:RuneWindwalker_deactivated");
+		this.itemIcon = iconRegister.registerIcon("runemagic:RuneWindwalker_deactivated");
+		this.activeIcon = iconRegister.registerIcon("runemagic:RuneWindwalker_activated");
+		this.passiveIcon = iconRegister.registerIcon("runemagic:RuneWindwalker_deactivated");
 	}
 	
 	@Override
