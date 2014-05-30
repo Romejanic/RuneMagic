@@ -104,7 +104,7 @@ public class ModItems {
 		MasterPickaxe = new ItemMasterPickaxe(MasterPickaxeID, ArcanTool).setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("ItemMasterPickaxe").setTextureName(Textures.Items.MASTER_PICKAXE);
 		GoldGlaze = new ItemGoldGlaze(GoldGlazeID);
 		
-		RuneBinding = new RuneBinding(RuneBindingID).setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("RuneBinding").setTextureName(Textures.Items.RUNE_BINDING);
+		RuneBinding = new RuneBinding().setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("RuneBinding").setTextureName(Textures.Items.RUNE_BINDING);
 		RuneWindwalker = new RuneWindwalker().setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("RuneWindwalker").setTextureName(Textures.Items.RUNE_WINDWALKER);
 		
 
