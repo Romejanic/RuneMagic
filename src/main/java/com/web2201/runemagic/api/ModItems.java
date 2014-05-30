@@ -7,6 +7,7 @@ import net.minecraftforge.common.util.EnumHelper;
 
 import com.web2201.runemagic.RuneMagic;
 import com.web2201.runemagic.armor.ItemArcanicArmor;
+import com.web2201.runemagic.item.ItemGoldGlaze;
 import com.web2201.runemagic.item.ItemInfusedMasterGem;
 import com.web2201.runemagic.item.ItemMasterBinder;
 import com.web2201.runemagic.item.ItemMasterBlade;
@@ -17,10 +18,27 @@ import com.web2201.runemagic.item.ItemSoulCore;
 import com.web2201.runemagic.item.ItemSoulShard;
 import com.web2201.runemagic.reference.Textures;
 import com.web2201.runemagic.runes.RuneBinding;
+import com.web2201.runemagic.runes.RuneWindwalker;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModItems {
+	
+	//ID's
+	public static int MasterBladeID = 3250;
+	public static int MasterGemID = 3251;
+	public static int InfusedMasterGemID = 3252;
+	public static int MasterHelmID = 3253;
+	public static int MasterChestplateID = 3254;
+	public static int MasterLegID = 3255;
+	public static int MasterBootID = 3256;
+	public static int SoulCoreID = 3257;
+	public static int SoulShardID = 3258;
+	public static int MasterBinderID = 3259;
+	public static int SoulCollectorID = 3260;
+	public static int MasterPickaxeID = 3261;
+	public static int RuneBindingID = 3262;
+	public static int GoldGlazeID = 3263;
 	
 	//Items
 	
@@ -33,12 +51,14 @@ public class ModItems {
 	public static Item InfusedMasterGem;
 	public static Item SoulCollector;
 	public static Item MasterPickaxe;
+	public static Item GoldGlaze;
 	
 	
 	
 	//Runes
 	
 	public static Item RuneBinding;
+	public static Item RuneWindwalker;
 	
 
 	
@@ -70,20 +90,22 @@ public class ModItems {
 	public static void init() 
 	{
 		
-		MasterBlade = new ItemMasterBlade(Arcan).setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.MASTER_BLADE).setUnlocalizedName("ItemMasterBlade");
-		MasterGem = new ItemMasterGem().setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("ItemMasterGem").setTextureName(Textures.Items.MASTER_GEM);
-		InfusedMasterGem = new ItemInfusedMasterGem().setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("ItemInfusedMasterGem").setTextureName(Textures.Items.INFUSED_MASTER_GEM);
+		MasterBlade = new ItemMasterBlade(MasterBladeID, Arcan).setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.MASTER_BLADE).setUnlocalizedName("ItemMasterBlade");
+		MasterGem = new ItemMasterGem(MasterGemID).setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("ItemMasterGem").setTextureName(Textures.Items.MASTER_GEM);
+		InfusedMasterGem = new ItemInfusedMasterGem(InfusedMasterGemID).setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("ItemInfusedMasterGem").setTextureName(Textures.Items.INFUSED_MASTER_GEM);
 		MasterHelm = new ItemArcanicArmor(ArcanArmor, AA1, 0).setUnlocalizedName("ItemMasterHelm").setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.MASTER_HELM);
 		MasterChestplate = new ItemArcanicArmor(ArcanArmor, AA2, 1).setUnlocalizedName("ItemMasterChestplate").setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.MASTER_CHESTPLATE);
 		MasterLeg = new ItemArcanicArmor(ArcanArmor, AA3, 2).setUnlocalizedName("ItemMasterLeg").setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.MASTER_LEG);
 		MasterBoot = new ItemArcanicArmor(ArcanArmor, AA4, 3).setUnlocalizedName("ItemMasterBoot").setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.MASTER_BOOT);
-	    SoulCore = new ItemSoulCore().setUnlocalizedName("ItemArcanicCore").setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.ARCANIC_CORE);
-		SoulShard = new ItemSoulShard().setUnlocalizedName("ItemArcanicShard").setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.ARCANIC_SHARD);
-		MasterBinder = new ItemMasterBinder().setUnlocalizedName("ItemMasterBinder").setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.ARCANIC_BINDER);
-		SoulCollector = new ItemSoulCollector(1).setUnlocalizedName("ItemSoulCollector").setCreativeTab(RuneMagic.arcanaTab);
-		MasterPickaxe = new ItemMasterPickaxe(ArcanTool).setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("ItemMasterPickaxe").setTextureName(Textures.Items.MASTER_PICKAXE);
+	    SoulCore = new ItemSoulCore(SoulCoreID).setUnlocalizedName("ItemArcanicCore").setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.ARCANIC_CORE);
+		SoulShard = new ItemSoulShard(SoulShardID).setUnlocalizedName("ItemArcanicShard").setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.ARCANIC_SHARD);
+		MasterBinder = new ItemMasterBinder(MasterBinderID).setUnlocalizedName("ItemMasterBinder").setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.ARCANIC_BINDER);
+		SoulCollector = new ItemSoulCollector(SoulCollectorID).setUnlocalizedName("ItemSoulCollector").setCreativeTab(RuneMagic.arcanaTab);
+		MasterPickaxe = new ItemMasterPickaxe(MasterPickaxeID, ArcanTool).setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("ItemMasterPickaxe").setTextureName(Textures.Items.MASTER_PICKAXE);
+		GoldGlaze = new ItemGoldGlaze(GoldGlazeID);
 		
-		RuneBinding = new RuneBinding().setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("RuneBinding").setTextureName(Textures.Items.RUNE_BINDING);
+		RuneBinding = new RuneBinding(RuneBindingID).setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("RuneBinding").setTextureName(Textures.Items.RUNE_BINDING);
+		RuneWindwalker = new RuneWindwalker().setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("RuneWindwalker").setTextureName(Textures.Items.RUNE_WINDWALKER);
 		
 
 	}
@@ -103,8 +125,10 @@ public class ModItems {
 		GameRegistry.registerItem(MasterLeg, "MasterLeg");
 		GameRegistry.registerItem(MasterBoot, "MasterBoot");
 		GameRegistry.registerItem(MasterPickaxe, "MasterPickaxe");
+		GameRegistry.registerItem(GoldGlaze, "GoldGlaze");
 		
 		GameRegistry.registerItem(RuneBinding, "RuneBinding");
+		GameRegistry.registerItem(RuneWindwalker, "RuneWindwalker");
 		
 		
 		
