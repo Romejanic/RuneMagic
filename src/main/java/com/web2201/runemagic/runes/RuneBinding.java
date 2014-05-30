@@ -18,7 +18,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class RuneBinding extends Item implements IBindingAgent {
 	
-	public RuneBinding(){
+	public RuneBinding(int RuneBindingID){
 		super();
 		this.setMaxStackSize(1);
 		
@@ -38,7 +38,7 @@ public class RuneBinding extends Item implements IBindingAgent {
     
     	list.add("");	
     	list.add("The core of your crafting");
-    	list.add("");
+    	//list.add("");
     	list.add("Binding Tier : 1");
     	}	
     }

@@ -17,3 +17,5 @@ item.ItemMasterPickaxe.name=Master Pickaxe
 item.ItemMasterBinder.name=Master Binder
 item.ItemSoulCollector.name=Soul Collector
 item.RuneBinding.name=Rune Binding
+item.RuneWindwalker.name=Rune of the Windwalker
+tile.TransformationFurnace.name=Transformation furnace
