@@ -11,7 +11,7 @@ public class BlockBloodStone extends Block {
 	public BlockBloodStone() {
 		super(Material.ground);
 		this.setBlockTextureName(Textures.Blocks.ARCANIC_STONE);
-		this.setBlockName(Names.Blocks.BLOOD_STONE);
+		this.setBlockName(Names.Blocks.ARCANIC_STONE);
 		this.setHardness(0.2F);
 		
 	

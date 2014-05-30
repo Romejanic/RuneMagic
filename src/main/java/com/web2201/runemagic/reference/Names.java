@@ -14,12 +14,13 @@ public class Names {
 		public static final String SOUL_CORE = "ItemArcanicCore";
 		public static final String SOUL_SHARD = "ItemArcanicShard";
 		public static final String MASTER_BINDER = "ItemMasterBinder";
+		public static final String SOUL_COLLECTOR = "ItemSoulCollector";
 	}
 	
 	public static class Blocks{
 		
-		public static final String BLOOD_STONE = "BlockBloodStone";
-		public static final String BLOOD_BRICK = "BlockBloodBrick";
+		public static final String ARCANIC_STONE = "BlockArcanicStone";
+		public static final String ARCANIC_BRICK = "BlockArcanicBrick";
 	}
 
 }

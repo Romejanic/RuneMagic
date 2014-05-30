@@ -1,15 +1,15 @@
 [
 {
-  "modid": "runemagic",
-  "name": "Rune Magic",
-  "description": "Magic based mod that adds some runes that give you cool powers",
-  "version": "pre 0.0.1",
+  "modid": "examplemod",
+  "name": "Example Mod",
+  "description": "Example placeholder mod.",
+  "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authors": ["Web2201"],
-  "credits": "The Forge and FML guys, for making this example and some cool mod authors for their API's",
-  "logoFile": "testmod:Logo.png",
+  "authors": ["ExampleDude"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
   "screenshots": [],
   "dependencies": []
 }

@@ -10,7 +10,7 @@ public class BlockBloodBrick extends Block {
 
 	public BlockBloodBrick() {
 		super(Material.ground);
-		this.setBlockName(Names.Blocks.BLOOD_BRICK);
+		this.setBlockName(Names.Blocks.ARCANIC_BRICK);
 		this.setBlockTextureName(Textures.Blocks.ARCANIC_BRICK);
 		this.setHardness(0.2F);
 

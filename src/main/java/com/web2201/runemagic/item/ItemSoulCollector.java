@@ -11,6 +11,11 @@ import net.minecraft.util.DamageSource;
 
 import com.web2201.runemagic.api.item.IBindingAgent;
 import com.web2201.runemagic.api.item.ISoulCounter;
+import com.web2201.runemagic.reference.Names;
+import com.web2201.runemagic.reference.Textures;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class ItemSoulCollector extends Item implements ISoulCounter, IBindingAgent {
 	
@@ -24,7 +29,8 @@ public class ItemSoulCollector extends Item implements ISoulCounter, IBindingAge
 		this.setMaxStackSize(1);
 		maxSubstance = damage;
 		collectorTier = 1;
-		
+		this.setUnlocalizedName(Names.Items.SOUL_COLLECTOR);
+		this.setTextureName(Textures.Items.SOUL_COLLECTOR);
 	}
 
 
@@ -47,5 +53,11 @@ public class ItemSoulCollector extends Item implements ISoulCounter, IBindingAge
 		
 		return this.maxSubstance;
 	}
+	
+	@SideOnly(Side.CLIENT)
+    public boolean isFull3D()
+    {
+        return true;
+    }
 
 }

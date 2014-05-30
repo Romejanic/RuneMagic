@@ -15,6 +15,7 @@ public class Textures {
 		public static final String ARCANIC_SHARD = "runemagic:ArcanicShard";
 		public static final String ARCANIC_BINDER = "runemagic:ArcanicBinder";
 		public static final String MASTER_PICKAXE = "runemagic:MasterPickaxe";
+		public static final String SOUL_COLLECTOR = "runemagic:SoulCollector";
 		
 		public static final String RUNE_BINDING = "runemagic:RuneBinding";
 		
