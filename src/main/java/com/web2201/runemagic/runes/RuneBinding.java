@@ -18,7 +18,7 @@ import cpw.mods.fml.relauncher.SideOnly;
 
 public class RuneBinding extends Item implements IBindingAgent {
 	
-	public RuneBinding(int RuneBindingID){
+	public RuneBinding(){
 		super();
 		this.setMaxStackSize(1);
 		

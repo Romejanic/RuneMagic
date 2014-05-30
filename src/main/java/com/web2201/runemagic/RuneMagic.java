@@ -14,6 +14,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
+
 @Mod(modid = BaseInfo.MODID, name = BaseInfo.NAME, version = BaseInfo.VERSION)
 
 public class RuneMagic 
@@ -30,6 +31,7 @@ public class RuneMagic
 	@SidedProxy(clientSide = BaseInfo.Client, serverSide = BaseInfo.Common)
 	
 	public static ProxyCommon proxy;
+
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event){
@@ -57,6 +59,7 @@ public class RuneMagic
 		proxy.registerRenderInformation();
 		
 	}
+	
 	
 	public RuneMagic() {}
 }
