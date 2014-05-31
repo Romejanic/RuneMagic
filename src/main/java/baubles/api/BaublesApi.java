@@ -1,4 +1,4 @@
-package com.web2201.runemagic.api.baubles;
+package baubles.api;
 
 import java.lang.reflect.Method;
 

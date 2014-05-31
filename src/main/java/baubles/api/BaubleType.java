@@ -1,4 +1,4 @@
-package com.web2201.runemagic.api.baubles;
+package baubles.api;
 
 public enum BaubleType {
 	RING,

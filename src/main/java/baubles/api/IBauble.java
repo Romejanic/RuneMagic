@@ -1,4 +1,4 @@
-package com.web2201.runemagic.api.baubles;
+package baubles.api;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemStack;
