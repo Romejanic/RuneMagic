@@ -32,6 +32,9 @@ public class RuneMagic
 	
 	public static ProxyCommon proxy;
 
+
+	public static Object instance;
+
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event){

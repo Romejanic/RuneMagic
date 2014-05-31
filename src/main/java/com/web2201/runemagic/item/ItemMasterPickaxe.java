@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 
 public class ItemMasterPickaxe extends ItemPickaxe {
 
-	public ItemMasterPickaxe(ToolMaterial ArcanTool) {
+	public ItemMasterPickaxe(int ID, ToolMaterial ArcanTool) {
 		super(ArcanTool);
 		this.setUnlocalizedName("ItemMasterPickaxe");
 		this.bFull3D = true;

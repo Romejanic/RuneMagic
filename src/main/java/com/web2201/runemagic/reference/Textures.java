@@ -18,7 +18,7 @@ public class Textures {
 		public static final String SOUL_COLLECTOR = "runemagic:SoulCollector";
 		
 		public static final String RUNE_BINDING = "runemagic:RuneBinding";
-		
+		public static final String RUNE_WINDWALKER = "runemagic:RuneWindwalker";
 		
 		
 		

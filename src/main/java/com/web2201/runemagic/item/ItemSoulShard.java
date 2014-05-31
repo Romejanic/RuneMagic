@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 
 public class ItemSoulShard extends Item {
 	
-	public ItemSoulShard(){
+	public ItemSoulShard(int ID){
 		super();
 		this.setUnlocalizedName(Names.Items.SOUL_SHARD);
 		this.setTextureName(Textures.Items.ARCANIC_SHARD);

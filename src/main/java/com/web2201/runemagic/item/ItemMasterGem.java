@@ -7,7 +7,7 @@ import com.web2201.runemagic.reference.Textures;
 
 public class ItemMasterGem extends Item {
 	
-	public ItemMasterGem() {
+	public ItemMasterGem(int ID) {
 		super();
 		this.setUnlocalizedName(Names.Items.MASTER_GEM);
 		this.setTextureName(Textures.Items.MASTER_GEM);

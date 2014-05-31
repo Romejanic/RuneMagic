@@ -12,7 +12,7 @@ import com.web2201.runemagic.reference.Textures;
 
 public class ItemMasterBlade extends ItemSword {
 
-	public ItemMasterBlade(ToolMaterial Arcan) {
+	public ItemMasterBlade(int ID, ToolMaterial Arcan) {
 		super(Arcan);
 		this.setTextureName(Textures.Items.MASTER_BLADE);
 		this.setUnlocalizedName(Names.Items.MASTER_BLADE);
