@@ -44,7 +44,7 @@ public class FireResistRing extends Item implements IBauble{
 	
 	@Override
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
-		player.addPotionEffect(new PotionEffect(Potion.fireResistance.id,20,0));
+		player.addPotionEffect(new PotionEffect(Potion.fireResistance.id,40,0));
 	}
 	
 	@Override
