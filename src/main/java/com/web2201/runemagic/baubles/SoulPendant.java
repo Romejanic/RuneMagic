@@ -3,6 +3,8 @@ package com.web2201.runemagic.baubles;
 import com.web2201.runemagic.reference.Names;
 import com.web2201.runemagic.reference.Textures;
 
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumRarity;
@@ -15,20 +17,14 @@ import baubles.api.BaubleType;
 import baubles.api.IBauble;
 import baubles.common.container.InventoryBaubles;
 import baubles.common.lib.PlayerHandler;
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 
-public class FireResistRing extends Item implements IBauble{
-
-	public FireResistRing(){
+public class SoulPendant extends Item implements IBauble{
+	
+	public SoulPendant(){
 		this.setMaxStackSize(1);
 		this.setMaxDamage(0);
-		this.setUnlocalizedName(Names.Items.FIRE_RING);
-		this.setTextureName(Textures.Items.FIRE_RING);
-	}
-	
-	public BaubleType getBaubleType(ItemStack itemstack) {
-		return BaubleType.RING;
+		this.setUnlocalizedName(Names.Items.SOUL_PENDANT);
+		this.setTextureName(Textures.Items.SOUL_PENDANT);
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -39,12 +35,12 @@ public class FireResistRing extends Item implements IBauble{
 	
 	@Override
 	public EnumRarity getRarity(ItemStack par1ItemStack) {
-		return EnumRarity.uncommon;
+		return EnumRarity.rare;
 	}
 	
 	@Override
-	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
-		player.addPotionEffect(new PotionEffect(Potion.fireResistance.id,20,0));
+	public BaubleType getBaubleType(ItemStack itemstack) {
+		return BaubleType.AMULET;
 	}
 	
 	@Override
@@ -66,10 +62,13 @@ public class FireResistRing extends Item implements IBauble{
 	}
 
 	@Override
+	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
+		player.addPotionEffect(new PotionEffect(Potion.regeneration.id,20,0));
+		player.addPotionEffect(new PotionEffect(Potion.resistance.id,20,0));
+	}
+
+	@Override
 	public void onEquipped(ItemStack itemstack, EntityLivingBase player) {
-		if (!player.worldObj.isRemote) {
-			player.worldObj.playSoundAtEntity(player, "random.orb", 0.1F, 1.3f);
-		}
 	}
 
 	@Override
@@ -85,4 +84,5 @@ public class FireResistRing extends Item implements IBauble{
 	public boolean canUnequip(ItemStack itemstack, EntityLivingBase player) {
 		return true;
 	}
+
 }

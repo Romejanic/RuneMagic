@@ -19,7 +19,9 @@ public class Textures {
 		
 		public static final String RUNE_BINDING = "runemagic:RuneBinding";
 		public static final String RUNE_WINDWALKER = "runemagic:RuneWindwalker";
-		public static final String FIRE_RESIST_RING = "runemagic:FireResistRing";
+		
+		public static final String FIRE_RING = "runemagic:FireResistRing";
+		public static final String SOUL_PENDANT = "runemagic:SoulPendant";
 		
 		
 		

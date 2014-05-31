@@ -15,6 +15,12 @@ public class Names {
 		public static final String SOUL_SHARD = "ItemSoulShard";
 		public static final String MASTER_BINDER = "ItemMasterBinder";
 		public static final String SOUL_COLLECTOR = "ItemSoulCollector";
+		
+		public static final String FIRE_RING = "FireResistRing";
+		public static final String SOUL_PENDANT = "SoulPendant";
+		
+		public static final String RUNE_WINDWALKER = "RuneWindwalker";
+		public static final String RUNE_BINDING = "RuneBinding";
 	}
 	
 	public static class Blocks{

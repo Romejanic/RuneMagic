@@ -12,6 +12,8 @@ import net.minecraft.world.World;
 import org.lwjgl.input.Keyboard;
 
 import com.web2201.runemagic.api.item.IBindingAgent;
+import com.web2201.runemagic.reference.Names;
+import com.web2201.runemagic.reference.Textures;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -21,6 +23,8 @@ public class RuneBinding extends Item implements IBindingAgent {
 	public RuneBinding(){
 		super();
 		this.setMaxStackSize(1);
+		this.setTextureName(Textures.Items.RUNE_BINDING);
+		this.setUnlocalizedName(Names.Items.RUNE_BINDING);
 		
 	}
 	

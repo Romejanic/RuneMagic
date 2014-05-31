@@ -2,6 +2,9 @@ package com.web2201.runemagic.runes;
 
 import java.util.List;
 
+import com.web2201.runemagic.reference.Names;
+import com.web2201.runemagic.reference.Textures;
+
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
@@ -25,6 +28,8 @@ public class RuneWindwalker extends Item {
 	public RuneWindwalker(){
 		super();
 		this.maxStackSize = 1;
+		this.setTextureName(Textures.Items.RUNE_WINDWALKER);
+		this.setUnlocalizedName(Names.Items.RUNE_WINDWALKER);
 		
 	}
 	

@@ -23,6 +23,7 @@ import com.web2201.runemagic.reference.Textures;
 import com.web2201.runemagic.runes.RuneBinding;
 import com.web2201.runemagic.runes.RuneWindwalker;
 import com.web2201.runemagic.baubles.FireResistRing;
+import com.web2201.runemagic.baubles.SoulPendant;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -69,6 +70,7 @@ public class ModItems {
 	//Baubles
 	
 	public static Item FireResistRing;
+	public static Item SoulPendant;
 	
 	//Armor
 	
@@ -113,12 +115,13 @@ public class ModItems {
 		MasterBoot = new ItemArcanicArmor(ArcanArmor, AA4, 3).setUnlocalizedName(Names.Items.MASTER_BOOT).setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.MASTER_BOOT);
 		
 		//Runes and rune bindings
-		RuneBinding = new RuneBinding().setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("RuneBinding").setTextureName(Textures.Items.RUNE_BINDING);
-		RuneWindwalker = new RuneWindwalker().setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("RuneWindwalker").setTextureName(Textures.Items.RUNE_WINDWALKER);
+		RuneBinding = new RuneBinding().setCreativeTab(RuneMagic.arcanaTab);
+		RuneWindwalker = new RuneWindwalker().setCreativeTab(RuneMagic.arcanaTab);
 		
 		//Baubles
-		FireResistRing = new FireResistRing().setCreativeTab(RuneMagic.arcanaTab).setUnlocalizedName("FireResistRing").setTextureName(Textures.Items.FIRE_RESIST_RING);
-
+		FireResistRing = new FireResistRing().setCreativeTab(RuneMagic.arcanaTab);
+		SoulPendant = new SoulPendant().setCreativeTab(RuneMagic.arcanaTab);
+		
 	}
 	
 	public static void GameRegistry()
