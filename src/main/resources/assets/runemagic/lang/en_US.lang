@@ -15,9 +15,12 @@ item.ItemInfusedMasterGem.name=Infused Master Gem
 item.ItemMasterPickaxe.name=Master Pickaxe
 item.ItemMasterBinder.name=Master Binder
 item.ItemSoulCollector.name=Soul Collector
+
 item.RuneBinding.name=Rune Binding
 item.RuneWindwalker.name=Rune of the Windwalker
+
 item.FireResistRing.name=Ring of Fire Resistance
+item.SoulPendant.name=Soul Pendant
 
 tile.TransformationFurnace.name=Transformation furnace
 tile.BlockArcanicStone.name=Arcanic Stone

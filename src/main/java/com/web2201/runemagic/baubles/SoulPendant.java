@@ -69,6 +69,9 @@ public class SoulPendant extends Item implements IBauble{
 
 	@Override
 	public void onEquipped(ItemStack itemstack, EntityLivingBase player) {
+		if (!player.worldObj.isRemote) {
+			player.worldObj.playSoundAtEntity(player, "random.orb", 0.1F, 1.3f);
+		}
 	}
 
 	@Override

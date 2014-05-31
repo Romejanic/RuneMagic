@@ -145,6 +145,7 @@ public class ModItems {
 		GameRegistry.registerItem(RuneWindwalker, "RuneWindwalker");
 		
 		GameRegistry.registerItem(FireResistRing, "FireResistRing");
+		GameRegistry.registerItem(SoulPendant, "SoulPendant");
 		
 		
 		GameRegistry.addShapedRecipe(
