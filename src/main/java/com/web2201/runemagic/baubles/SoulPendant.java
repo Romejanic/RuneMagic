@@ -63,8 +63,8 @@ public class SoulPendant extends Item implements IBauble{
 
 	@Override
 	public void onWornTick(ItemStack itemstack, EntityLivingBase player) {
-		player.addPotionEffect(new PotionEffect(Potion.regeneration.id,40,0));
-		player.addPotionEffect(new PotionEffect(Potion.resistance.id,40,0));
+		player.addPotionEffect(new PotionEffect(Potion.regeneration.id,40,1));
+		player.addPotionEffect(new PotionEffect(Potion.resistance.id,40,1));
 	}
 
 	@Override
