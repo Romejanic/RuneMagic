@@ -8,6 +8,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
+import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.util.IIcon;
 import net.minecraft.world.World;
@@ -96,8 +97,8 @@ public class RuneWindwalker extends Item {
 		if(tag.getBoolean("isActive")){
 			par1ItemStack.setItemDamage(1);
 			tag.setInteger("worldTimeDelay", (int) (par2world.getWorldTime() - 1) % 200);
-			par3EntityPlayer.addPotionEffect(new PotionEffect(1, 10, 1));
-			par3EntityPlayer.addPotionEffect(new PotionEffect(8, 10, 1));
+			par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 10, 1));
+			par3EntityPlayer.addPotionEffect(new PotionEffect(Potion.jump.id, 10, 1));
 		}
 		return par1ItemStack;
 	}

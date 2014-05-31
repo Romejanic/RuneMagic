@@ -6,9 +6,9 @@ import net.minecraft.block.material.Material;
 import com.web2201.runemagic.reference.Names;
 import com.web2201.runemagic.reference.Textures;
 
-public class BlockBloodStone extends Block {
+public class BlockArcanicStone extends Block {
 
-	public BlockBloodStone() {
+	public BlockArcanicStone() {
 		super(Material.ground);
 		this.setBlockTextureName(Textures.Blocks.ARCANIC_STONE);
 		this.setBlockName(Names.Blocks.ARCANIC_STONE);

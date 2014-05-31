@@ -5,11 +5,11 @@ import net.minecraft.item.Item;
 import com.web2201.runemagic.reference.Names;
 import com.web2201.runemagic.reference.Textures;
 
-public class ItemSoulCore extends Item {
+public class ItemArcanicCore extends Item {
 	
-	public ItemSoulCore(int ID){
+	public ItemArcanicCore(int ID){
 		super();
-		this.setUnlocalizedName(Names.Items.SOUL_CORE);
+		this.setUnlocalizedName(Names.Items.ARCANIC_CORE);
 		this.setTextureName(Textures.Items.ARCANIC_CORE);
 	}
 

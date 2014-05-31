@@ -1,14 +1,13 @@
 itemGroup.RuneMagic=Rune Magic
+
 item.ItemMasterHelm.name=Master Helmet
 item.ItemMasterChestplate.name=Master Chestplate
 item.ItemMasterLeg.name=Master Leggings
 item.ItemMasterBoot.name=Master Boots
-tile.BlockArcanicStone.name=Arcanic Stone
-tile.BlockArcanicBrick.name=Arcanic Brick
 item.Cherry.name=Cherry
 item.ItemArcanicCore.name=Arcanic Core
 item.ItemArcanicShard.name=Arcanic Shard
-item.ItemArcanicBinder.name=Arcanic Binder
+item.ItemMasterBinder.name=Master Binder
 item.ItemMasterBlade.name=Master Blade
 item.MasterBow.name=Master Bow
 item.ItemMasterGem.name=Master Gem
@@ -18,4 +17,10 @@ item.ItemMasterBinder.name=Master Binder
 item.ItemSoulCollector.name=Soul Collector
 item.RuneBinding.name=Rune Binding
 item.RuneWindwalker.name=Rune of the Windwalker
+item.FireResistRing.name=Ring of Fire Resistance
+
 tile.TransformationFurnace.name=Transformation furnace
+tile.BlockArcanicStone.name=Arcanic Stone
+tile.BlockArcanicBrick.name=Arcanic Brick
+
+entity.SoulMob.name=Wandering Soul

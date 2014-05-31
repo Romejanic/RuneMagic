@@ -9,7 +9,7 @@ public class ItemSoulShard extends Item {
 	
 	public ItemSoulShard(int ID){
 		super();
-		this.setUnlocalizedName(Names.Items.SOUL_SHARD);
+		this.setUnlocalizedName(Names.Items.ARCANIC_SHARD);
 		this.setTextureName(Textures.Items.ARCANIC_SHARD);
 	}
 
