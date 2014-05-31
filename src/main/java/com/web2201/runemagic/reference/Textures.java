@@ -12,7 +12,7 @@ public class Textures {
 		public static final String MASTER_LEG = "runemagic:MasterLeg";
 		public static final String MASTER_BOOT = "runemagic:MasterBoot";
 		public static final String ARCANIC_CORE = "runemagic:ArcanicCore";
-		public static final String ARCANIC_SHARD = "runemagic:ArcanicShard";
+		public static final String SOUL_SHARD = "runemagic:SoulShard";
 		public static final String MASTER_BINDER = "runemagic:MasterBinder";
 		public static final String MASTER_PICKAXE = "runemagic:MasterPickaxe";
 		public static final String SOUL_COLLECTOR = "runemagic:SoulCollector";

@@ -146,7 +146,9 @@ public class ModItems {
 		
 		GameRegistry.addShapedRecipe(
 				new ItemStack(ModItems.FireResistRing), new Object[] {
-					"III", "IPI", "III", 
+					"III", 
+					"IPI", 
+					"III", 
 					Character.valueOf('I'), new ItemStack(Items.iron_ingot), 
 					Character.valueOf('P'), new ItemStack(Items.potionitem,1,8227)});
 	}

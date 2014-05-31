@@ -12,7 +12,7 @@ public class Names {
 		public static final String MASTER_LEG = "ItemMasterLeg";
 		public static final String MASTER_BOOT = "ItemMasterBoot";
 		public static final String ARCANIC_CORE = "ItemArcanicCore";
-		public static final String ARCANIC_SHARD = "ItemArcanicShard";
+		public static final String SOUL_SHARD = "ItemSoulShard";
 		public static final String MASTER_BINDER = "ItemMasterBinder";
 		public static final String SOUL_COLLECTOR = "ItemSoulCollector";
 	}
