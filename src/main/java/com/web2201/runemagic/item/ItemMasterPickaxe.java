@@ -8,7 +8,7 @@ import net.minecraft.item.ItemStack;
 
 public class ItemMasterPickaxe extends ItemPickaxe {
 
-	public ItemMasterPickaxe(int ID, ToolMaterial ArcanTool) {
+	public ItemMasterPickaxe(ToolMaterial ArcanTool) {
 		super(ArcanTool);
 		this.setUnlocalizedName("ItemMasterPickaxe");
 		this.setTextureName(Textures.Items.MASTER_PICKAXE);

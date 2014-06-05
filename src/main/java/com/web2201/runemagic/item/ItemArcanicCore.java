@@ -7,7 +7,7 @@ import com.web2201.runemagic.reference.Textures;
 
 public class ItemArcanicCore extends Item {
 	
-	public ItemArcanicCore(int ID){
+	public ItemArcanicCore(){
 		super();
 		this.setUnlocalizedName(Names.Items.ARCANIC_CORE);
 		this.setTextureName(Textures.Items.ARCANIC_CORE);

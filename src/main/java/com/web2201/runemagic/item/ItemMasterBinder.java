@@ -8,7 +8,7 @@ import com.web2201.runemagic.reference.Textures;
 
 public class ItemMasterBinder extends Item {
 	
-	public ItemMasterBinder(int ID){
+	public ItemMasterBinder(){
 		super();
 		this.setUnlocalizedName(Names.Items.MASTER_BINDER);
 		this.setTextureName(Textures.Items.MASTER_BINDER);

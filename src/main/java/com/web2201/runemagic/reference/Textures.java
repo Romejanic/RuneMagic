@@ -16,6 +16,9 @@ public class Textures {
 		public static final String MASTER_BINDER = "runemagic:MasterBinder";
 		public static final String MASTER_PICKAXE = "runemagic:MasterPickaxe";
 		public static final String SOUL_COLLECTOR = "runemagic:SoulCollector";
+		public static final String SOUL_FRAGMENT = "runemagic:SoulFragment";
+		public static final String SOUL_GEM = "runemagic:SoulGem";
+		public static final String GOLD_STRING = "runemagic:GoldString";
 		
 		public static final String RUNE_BINDING = "runemagic:RuneBinding";
 		public static final String RUNE_WINDWALKER = "runemagic:RuneWindwalker";
@@ -31,7 +34,8 @@ public class Textures {
 		
 		public static final String ARCANIC_STONE = "runemagic:ArcanicStone";
 		public static final String ARCANIC_BRICK = "runemagic:ArcanicBrick";
-		
+		public static final String TRANSFORMATION_FURNACE = "runemagic:TransFormationFurnace";
+		public static final String TRANSFORMATION_FURNACE_ACTIVE = "runemagic:TransFormationFurnaceActive";
 	}
 
 }

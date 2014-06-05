@@ -23,11 +23,11 @@ public class ItemSoulCollector extends Item implements ISoulCounter, IBindingAge
 	protected int collectorTier;
 	
 	
-	public ItemSoulCollector(int damage){
+	public ItemSoulCollector(){
 		super();
 		DamageSource damageSource = DamageSource.generic;
 		this.setMaxStackSize(1);
-		maxSubstance = damage;
+		//maxSubstance = damage;
 		collectorTier = 1;
 		this.setUnlocalizedName(Names.Items.SOUL_COLLECTOR);
 		this.setTextureName(Textures.Items.SOUL_COLLECTOR);

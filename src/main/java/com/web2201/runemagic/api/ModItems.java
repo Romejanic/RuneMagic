@@ -10,6 +10,7 @@ import net.minecraftforge.common.util.EnumHelper;
 import com.web2201.runemagic.RuneMagic;
 import com.web2201.runemagic.armor.ItemArcanicArmor;
 import com.web2201.runemagic.item.ItemGoldGlaze;
+import com.web2201.runemagic.item.ItemGoldString;
 import com.web2201.runemagic.item.ItemInfusedMasterGem;
 import com.web2201.runemagic.item.ItemMasterBinder;
 import com.web2201.runemagic.item.ItemMasterBlade;
@@ -17,6 +18,8 @@ import com.web2201.runemagic.item.ItemMasterGem;
 import com.web2201.runemagic.item.ItemMasterPickaxe;
 import com.web2201.runemagic.item.ItemSoulCollector;
 import com.web2201.runemagic.item.ItemArcanicCore;
+import com.web2201.runemagic.item.ItemSoulFragment;
+import com.web2201.runemagic.item.ItemSoulGem;
 import com.web2201.runemagic.item.ItemSoulShard;
 import com.web2201.runemagic.reference.Names;
 import com.web2201.runemagic.reference.Textures;
@@ -28,22 +31,6 @@ import com.web2201.runemagic.baubles.SoulPendant;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModItems {
-	
-	//ID's
-	public static int MasterBladeID = 3250;
-	public static int MasterGemID = 3251;
-	public static int InfusedMasterGemID = 3252;
-	public static int MasterHelmID = 3253;
-	public static int MasterChestplateID = 3254;
-	public static int MasterLegID = 3255;
-	public static int MasterBootID = 3256;
-	public static int SoulCoreID = 3257;
-	public static int SoulShardID = 3258;
-	public static int MasterBinderID = 3259;
-	public static int SoulCollectorID = 3260;
-	public static int MasterPickaxeID = 3261;
-	public static int RuneBindingID = 3262;
-	public static int GoldGlazeID = 3263;
 	
 	//Items
 	
@@ -57,7 +44,9 @@ public class ModItems {
 	public static Item SoulCollector;
 	public static Item MasterPickaxe;
 	public static Item GoldGlaze;
-	
+	public static Item SoulFragment;
+	public static Item SoulGem;
+	public static Item GoldString;
 	
 	
 	//Runes
@@ -72,12 +61,14 @@ public class ModItems {
 	public static Item FireResistRing;
 	public static Item SoulPendant;
 	
+	
 	//Armor
 	
 	public static Item MasterHelm;
 	public static Item MasterChestplate;
 	public static Item MasterLeg;
 	public static Item MasterBoot;
+	
 	
 	//Materials
 	//string, harvest, maxUses, efficiency, damage, enchantability 
@@ -98,15 +89,18 @@ public class ModItems {
 	public static void init() 
 	{
 		//Normal Items
-		MasterBlade = new ItemMasterBlade(MasterBladeID, Arcan).setCreativeTab(RuneMagic.arcanaTab);
-		MasterGem = new ItemMasterGem(MasterGemID).setCreativeTab(RuneMagic.arcanaTab);
-		InfusedMasterGem = new ItemInfusedMasterGem(InfusedMasterGemID).setCreativeTab(RuneMagic.arcanaTab);
-	    SoulCore = new ItemArcanicCore(SoulCoreID).setCreativeTab(RuneMagic.arcanaTab);
-		SoulShard = new ItemSoulShard(SoulShardID).setCreativeTab(RuneMagic.arcanaTab);
-		MasterBinder = new ItemMasterBinder(MasterBinderID).setCreativeTab(RuneMagic.arcanaTab);
-		SoulCollector = new ItemSoulCollector(SoulCollectorID).setCreativeTab(RuneMagic.arcanaTab);
-		MasterPickaxe = new ItemMasterPickaxe(MasterPickaxeID, ArcanTool).setCreativeTab(RuneMagic.arcanaTab);
-		GoldGlaze = new ItemGoldGlaze(GoldGlazeID);
+		MasterBlade = new ItemMasterBlade(Arcan).setCreativeTab(RuneMagic.arcanaTab);
+		MasterGem = new ItemMasterGem().setCreativeTab(RuneMagic.arcanaTab);
+		InfusedMasterGem = new ItemInfusedMasterGem().setCreativeTab(RuneMagic.arcanaTab);
+	    SoulCore = new ItemArcanicCore().setCreativeTab(RuneMagic.arcanaTab);
+		SoulShard = new ItemSoulShard().setCreativeTab(RuneMagic.arcanaTab);
+		MasterBinder = new ItemMasterBinder().setCreativeTab(RuneMagic.arcanaTab);
+		SoulCollector = new ItemSoulCollector().setCreativeTab(RuneMagic.arcanaTab);
+		MasterPickaxe = new ItemMasterPickaxe(ArcanTool).setCreativeTab(RuneMagic.arcanaTab);
+		GoldGlaze = new ItemGoldGlaze().setCreativeTab(RuneMagic.arcanaTab);
+		SoulFragment = new ItemSoulFragment().setCreativeTab(RuneMagic.arcanaTab);
+		SoulGem = new ItemSoulGem().setCreativeTab(RuneMagic.arcanaTab);
+		GoldString = new ItemGoldString().setCreativeTab(RuneMagic.arcanaTab);
 		
 		//Armor
 		MasterHelm = new ItemArcanicArmor(ArcanArmor, AA1, 0).setUnlocalizedName(Names.Items.MASTER_HELM).setCreativeTab(RuneMagic.arcanaTab).setTextureName(Textures.Items.MASTER_HELM);
@@ -126,20 +120,23 @@ public class ModItems {
 	
 	public static void GameRegistry()
 	{
-		
-		GameRegistry.registerItem(MasterBinder, "ArcanicBinder");
-		GameRegistry.registerItem(SoulCore, "ArcanicCore");
-		GameRegistry.registerItem(SoulShard, "ArcanicShard");
 		GameRegistry.registerItem(MasterBlade, "MasterBlade");
-		GameRegistry.registerItem(MasterGem, "MasterGem");
-		GameRegistry.registerItem(InfusedMasterGem, "InfusedMasterGem");
 		GameRegistry.registerItem(SoulCollector, "SoulCollector");
 		GameRegistry.registerItem(MasterHelm, "MasterHelm");
 		GameRegistry.registerItem(MasterChestplate, "MasterChestplate");
 		GameRegistry.registerItem(MasterLeg, "MasterLeg");
 		GameRegistry.registerItem(MasterBoot, "MasterBoot");
 		GameRegistry.registerItem(MasterPickaxe, "MasterPickaxe");
+		
 		GameRegistry.registerItem(GoldGlaze, "GoldGlaze");
+		GameRegistry.registerItem(MasterGem, "MasterGem");
+		GameRegistry.registerItem(InfusedMasterGem, "InfusedMasterGem");
+		GameRegistry.registerItem(MasterBinder, "ArcanicBinder");
+		GameRegistry.registerItem(SoulCore, "ArcanicCore");
+		GameRegistry.registerItem(SoulShard, "ArcanicShard");
+		GameRegistry.registerItem(SoulFragment, "SoulFrag");
+		GameRegistry.registerItem(GoldString, "GoldString");
+		GameRegistry.registerItem(SoulGem, "SoulGem");
 		
 		GameRegistry.registerItem(RuneBinding, "RuneBinding");
 		GameRegistry.registerItem(RuneWindwalker, "RuneWindwalker");
@@ -155,7 +152,32 @@ public class ModItems {
 					"III", 
 					Character.valueOf('I'), new ItemStack(Items.iron_ingot), 
 					Character.valueOf('P'), new ItemStack(Items.potionitem,1,8227)});
+		
+		GameRegistry.addShapedRecipe(
+				new ItemStack(ModItems.SoulFragment), new Object[] {
+					"SSS",
+					"SSS",
+					"SSS",
+					Character.valueOf('S'), new ItemStack(ModItems.SoulShard)});
+		
+		GameRegistry.addShapedRecipe(
+				new ItemStack(ModItems.SoulGem), new Object[] {
+					"FFF",
+					"FFF",
+					"FFF",
+					Character.valueOf('F'), new ItemStack(ModItems.SoulFragment)});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.GoldString), new Object[]{new ItemStack(Items.string), new ItemStack(Items.gold_nugget)});
+		
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.SoulPendant), new Object[]{
+			"sSs",
+			"S S",
+			"GSs",
+			Character.valueOf('S'), new ItemStack(ModItems.GoldString),
+			Character.valueOf('G'), new ItemStack(ModItems.SoulGem),
+			Character.valueOf('s'), new ItemStack(Items.string)});
 	}
+	
 	
 	
 	
