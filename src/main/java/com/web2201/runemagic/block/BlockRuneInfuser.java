@@ -36,6 +36,11 @@ public class BlockRuneInfuser extends BlockContainer{
 		this.iconBottom = iconRegister.registerIcon(Textures.Blocks.RUNE_INFUSER_BOTTOM);
 	}
 	
+	@SideOnly(Side.CLIENT)
+	public IIcon getIcon(int side, int metadata){
+		 return side == 1 ? this.iconTop : (side == 0 ? this.iconBottom : this.blockIcon);
+	}
+	
 	@Override
 	public TileEntity createNewTileEntity(World var1, int var2) {
 		return null;

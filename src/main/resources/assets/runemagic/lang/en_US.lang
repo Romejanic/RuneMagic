@@ -28,7 +28,7 @@ item.SoulPendant.name=Soul Pendant
 tile.BlockArcanicStone.name=Arcanic Stone
 tile.BlockArcanicBrick.name=Arcanic Brick
 
-tile.RuneInfuserIdle.name=Rune Infuser
-tile.RuneInfuserActive.name=Active Rune Infuser
+tile.RuneInfuserIdle.name=Rune Infusion Table
+tile.RuneInfuserActive.name=Active Rune Infusion Table
 
 entity.SoulMob.name=Wandering Soul
