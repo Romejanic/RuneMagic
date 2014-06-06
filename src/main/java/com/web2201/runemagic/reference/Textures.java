@@ -19,12 +19,14 @@ public class Textures {
 		public static final String SOUL_FRAGMENT = "runemagic:SoulFragment";
 		public static final String SOUL_GEM = "runemagic:SoulGem";
 		public static final String GOLD_STRING = "runemagic:GoldString";
+		public static final String GOLD_GLAZE = "runemagic:GoldGlaze";
 		
 		public static final String RUNE_BINDING = "runemagic:RuneBinding";
 		public static final String RUNE_WINDWALKER = "runemagic:RuneWindwalker";
 		
 		public static final String FIRE_RING = "runemagic:FireResistRing";
 		public static final String SOUL_PENDANT = "runemagic:SoulPendant";
+		
 		
 		
 		

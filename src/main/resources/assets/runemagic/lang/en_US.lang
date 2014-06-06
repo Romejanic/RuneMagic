@@ -18,6 +18,7 @@ item.ItemSoulCollector.name=Soul Collector
 item.ItemSoulFragment.name=Soul Fragment
 item.ItemSoulGem.name=Soul Gem
 item.ItemGoldString.name=Golden String
+item.ItemGoldGlaze.name=Gold Glaze
 
 item.RuneBinding.name=Rune Binding
 item.RuneWindwalker.name=Rune of the Windwalker

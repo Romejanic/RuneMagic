@@ -176,6 +176,8 @@ public class ModItems {
 			Character.valueOf('S'), new ItemStack(ModItems.GoldString),
 			Character.valueOf('G'), new ItemStack(ModItems.SoulGem),
 			Character.valueOf('s'), new ItemStack(Items.string)});
+		
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.GoldGlaze), new Object[]{new ItemStack(Items.potionitem/*plain water bottle*/), new ItemStack(Items.gold_nugget)});
 	}
 	
 	
