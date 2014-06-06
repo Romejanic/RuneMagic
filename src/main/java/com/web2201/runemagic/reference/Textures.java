@@ -34,8 +34,10 @@ public class Textures {
 		
 		public static final String ARCANIC_STONE = "runemagic:ArcanicStone";
 		public static final String ARCANIC_BRICK = "runemagic:ArcanicBrick";
-		public static final String TRANSFORMATION_FURNACE = "runemagic:TransFormationFurnace";
-		public static final String TRANSFORMATION_FURNACE_ACTIVE = "runemagic:TransFormationFurnaceActive";
+		public static final String RUNE_INFUSER_SIDE = "runemagic:InfuserSide";
+		public static final String RUNE_INFUSER_BOTTOM = "runemagic:InfuserBottom";
+		public static final String RUNE_INFUSER_TOP_OFF = "runemagic:InfuserTopOff";
+		public static final String RUNE_INFUSER_TOP_ON = "runemagic:InfuserTopOn";
 	}
 
 }

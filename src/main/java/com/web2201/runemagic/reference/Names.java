@@ -31,6 +31,8 @@ public class Names {
 		
 		public static final String ARCANIC_STONE = "BlockArcanicStone";
 		public static final String ARCANIC_BRICK = "BlockArcanicBrick";
+		public static final String RUNE_INFUSER_IDLE = "RuneInfuserIdle";
+		public static final String RUNE_INFUSER_ACTIVE = "RuneInfuserActive";
 	}
 	
 	public static class Mobs{
