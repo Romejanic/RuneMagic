@@ -18,8 +18,8 @@ buildscript {
 apply plugin: 'forge'
 
 version = "1.0"
-group= "com.yourname.modid" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "modid"
+group= "com.web2201.runemagic" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "Web2201.RuneMagic"
 
 minecraft {
     version = "1.7.2-10.12.1.1060"
